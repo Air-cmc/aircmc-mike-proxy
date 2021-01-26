@@ -8,13 +8,8 @@ const proxy = require('http-proxy-middleware');
 const app = express();
 
 app.use(bodyParser.json());
-//app.use(express.static(__dirname));
-app.use('/',
-  createProxyMiddleware({
-    target: 'http://localhost:3004',
-    secure: false
-  }));
-app.use('/listings/*',
+app.use('/', express.static(__dirname));
+app.use('/listing/*',
   createProxyMiddleware({
     target: 'http://localhost:3004',
     secure: false

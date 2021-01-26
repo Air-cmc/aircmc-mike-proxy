@@ -1,0 +1,24 @@
+{
+  "name": "marquee-proxy",
+  "version": "1.0.0",
+  "description": "proxy for marquee module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Destination-Capstone/Marquee-proxy.git"
+  },
+  "author": "cmayer153",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Destination-Capstone/Marquee/issues"
+  },
+  "homepage": "https://github.com/Destination-Capstone/Marquee-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "http-proxy-middleware": "^1.0.6"
+  }
+}
